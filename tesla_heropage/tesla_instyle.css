@@ -54,14 +54,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 8px 37px;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
 .navbar>img {
-    width: 140px;
+    width: 123px;
+    filter: invert(1);
 }
 
 .logo {
@@ -75,7 +76,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-weight: 500;
     font-size: 14px;
     padding: 5px 6px;
@@ -83,7 +84,7 @@ body {
 }
 
 .menu a:hover {
-    background-color: #ffffff37;
+    background-color: #ffffff0f;
     transition: all 0.3s;
 }
 
@@ -99,11 +100,13 @@ body {
     height: 30px;
     cursor: pointer;
     border-radius: 40px;
+    /* filter: invert(1); */
 }
 
 .icons img:hover {
-    background-color: #ffffff58;
-    transition: all 0.4s;
+    background-color: rgba(211, 211, 211, 0.553);
+    filter: none;
+    transition: all 0.9s;
 }
 
 .menu-toggle {
@@ -124,9 +127,11 @@ body {
 }
 
 .text-area h1 {
-    font-size: 3vw;
-    margin-top: 51px;
-    color: #222;
+    font-size: 4vw;
+    margin-top: 16px;
+    color: #fff;
+    /* color: #222; modified  */
+
 }
 
 .text-area img {
@@ -137,36 +142,36 @@ body {
 .text-area p {
     font-weight: 600;
     font-size: 20px;
+    color: #fff;
 }
 
 .text-area span {
-    color: #393c41;
-    border-bottom: 2px solid #393c41;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .text-area span:hover {
-    color: black;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #fff;
     transition: all ease 0.3s;
     cursor: pointer;
 }
 
-.white-span h1 {
-    color: #dedfdf;
+.royal-blue-span h1 {
+    color: #fff;
 }
 
-.white-span p span {
-    color: #dedfdf;
-    border-bottom: 2px solid #dedfdf;
+.royal-blue-span p span {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
-.white-span p span:hover {
-    color: #dedfdf;
-    border-bottom: 3px solid #dedfdf;
+.royal-blue-span p span:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff;
 }
 
 .sec {
-    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg');
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png');
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -191,7 +196,7 @@ body {
     background-color: #000;
     color: white;
     border: none;
-    padding: 10px 100px;
+    padding: 11px 96px;
     margin: 5px;
     cursor: pointer;
     border-radius: 4px;
@@ -199,18 +204,35 @@ body {
     font-size: 14px;
 }
 
-button.white {
-    background-color: white;
-    color: #393c41;
+button.royal-blue {
+    background-color: #3e6ae1;
+    color: #fefeff;
 }
 
 button.black {
-    background-color: #171a20;
+    background-color: #fff;
+    color: #393c41;
 }
 
-button.black:hover {
-    transition: all 0.3s;
-    background-color: #393c41;
+.cy-btn {
+    padding: 13px 100px !important;
+    color: #939496 !important;
+    border-radius: 0px !important;
+}
+
+.cy-btn:hover {
+    background-color: #181b22 !important;
+    transition: all 0.4s;
+}
+
+.cyber-btn1 {
+    background-color: #121213 !important;
+    border-top: 2px solid #818182 !important;
+}
+
+.cyber-btn2 {
+    background-color: #121313 !important;
+    outline: 1px solid #34373c !important;
 }
 
 footer {
@@ -262,17 +284,17 @@ footer {
 
 /* Arhum ki utility classes! */
 .blue {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-US-v2.png);
     background-position: center center;
 }
 
 .grey {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop-v2.jpg);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop-US.png);
     background-position: center center;
 }
 
 .silver {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-v2.jpg);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-US.png);
     background-position: center center;
 }
 
@@ -287,17 +309,17 @@ footer {
 }
 
 .roof {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-SolarRoof-Desktop-Global);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-SolarRoof-Desktop-US.png);
     background-position: center center;
 }
 
 .accessories {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-01-Desktop.jpg);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-Desktop-US.png);
     background-position: center center;
 }
 
 .power {
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-NA-APAC.jpg);
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-US.png);
     background-position: center center;
 }
 
@@ -313,7 +335,7 @@ footer {
 
     .menu-toggle {
         display: block;
-        color: black;
+        color: #fff;
         font-size: 16px;
         border: none;
         border-radius: 5px;
@@ -325,7 +347,7 @@ footer {
     }
 
     .sec {
-        background-size: max(1500px, 100vw);
+        background-size: max(1576px, 100vw);
     }
 
     .accessories {
